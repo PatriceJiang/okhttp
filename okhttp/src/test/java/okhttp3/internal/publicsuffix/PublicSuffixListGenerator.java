@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3.internal.publicsuffix;
+package org.cocos2dx.okhttp3.internal.publicsuffix;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
-import okio.BufferedSink;
-import okio.BufferedSource;
-import okio.ByteString;
-import okio.GzipSink;
-import okio.Okio;
-import okio.Sink;
+import org.cocos2dx.okhttp3.OkHttpClient;
+import org.cocos2dx.okhttp3.Request;
+import org.cocos2dx.okhttp3.Response;
+import org.cocos2dx.okio.BufferedSink;
+import org.cocos2dx.okio.BufferedSource;
+import org.cocos2dx.okio.ByteString;
+import org.cocos2dx.okio.GzipSink;
+import org.cocos2dx.okio.Okio;
+import org.cocos2dx.okio.Sink;
 
 /**
  * Downloads the public suffix list from https://publicsuffix.org/list/public_suffix_list.dat and
@@ -39,7 +39,7 @@ import okio.Sink;
  * <p>The resulting file is used by {@link PublicSuffixDatabase}.
  */
 public final class PublicSuffixListGenerator {
-  private static final String OKHTTP_RESOURCE_DIR = "okhttp" + File.separator + "src"
+  private static final String OKHTTP_RESOURCE_DIR = "org" + File.separator + "cocos2dx" + File.separator + "okhttp" + File.separator + "src"
       + File.separator + "main" + File.separator + "resources" + File.separator
       + "okhttp3" + File.separator + "internal" + File.separator + "publicsuffix";
 

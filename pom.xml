@@ -91,6 +91,8 @@
         <groupId>com.squareup.okio</groupId>
         <artifactId>okio</artifactId>
         <version>${okio.version}</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/../libs/okio-1.15.0.jar</systemPath>
       </dependency>
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
@@ -694,6 +696,15 @@
       <id>alpn-when-jdk8_202</id>
       <activation>
         <jdk>1.8.0_202</jdk>
+      </activation>
+      <properties>
+        <alpn.jdk8.version>8.1.13.v20181017</alpn.jdk8.version>
+      </properties>
+    </profile>
+    <profile>
+      <id>alpn-when-jdk8_221</id>
+      <activation>
+        <jdk>1.8.0_221</jdk>
       </activation>
       <properties>
         <alpn.jdk8.version>8.1.13.v20181017</alpn.jdk8.version>
